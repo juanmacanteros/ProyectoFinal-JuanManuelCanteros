@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/hero2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: transparent;
+}
+
+.font-weight-bold {
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+  color: #c21c32;
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  color: #fff;
+}
+
+.container img {
+  height: auto;
+  width: 430px;
+  border-radius: 14px;
+  margin: 20px;
+}
+
+.gap100 {
+  padding: 150px 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin: 60px;
+  padding: 20px;
+}
+
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 14px;
+  background-color: #282828;
+  border-radius: 3px;
+}
+
+.skill-per {
+  height: 14px;
+  background-color: #c21c32;
+  border-radius: 3px;
+  position: relative;
+  animation: fillbars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translate(50%);
+}
+
+.skille-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  top: -20px;
+  right: 0;
+  transform: translate(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillbars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.container-cards {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+  place-items: center;
+}
+
+.card {
+  width: 350px;
+  margin: 0PX;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(75, 71, 71, 0.5);
+  border-left: 1px solid rgba(75, 71, 71, 0.5);
+  border-top: 1px solid rgba(75, 75, 71, 0.5);
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: black;
+}
+
+.card p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.card button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 14px;
+  background-color: #c21c32;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-contact {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(75, 71, 71, 0.5);
+  border-left: 1px solid rgba(75, 71, 71, 0.5);
+  border-top: 1px solid rgba(75, 75, 71, 0.5);
+  border-radius: 15px;
+}
+
+.contact {
+  padding: 0.8rem;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+
+.contact label, .contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.contact label {
+  font-weight: 700;
+}
+
+.contact input, .contact textarea {
+  border: none;
+  border-bottom: 2px solid #c21c32;
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  color: gray;
+}
+
+.contact textarea {
+  min-height: 100px;
+}
+
+input [tipe=submit] {
+  padding: 10px;
+  border: none;
+  background-color: #c21c32;
+  color: #f1f1f1;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
